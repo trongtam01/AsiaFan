@@ -1,0 +1,36 @@
+2022-01-14T05:00:31+00:00 CRITICAL Uncaught TypeError: array_search(): Argument #2 ($haystack) must be of type array, null given in C:\xampp\htdocs\AsiaFan\wp-content\plugins\ar-contactus\classes\ArContactUsUpdater.php:26
+Stack trace:
+#0 C:\xampp\htdocs\AsiaFan\wp-content\plugins\ar-contactus\classes\ArContactUsUpdater.php(26): array_search('ar-contactus/ar...', NULL)
+#1 C:\xampp\htdocs\AsiaFan\wp-includes\class-wp-hook.php(303): ArContactUsUpdater->updatesExclude(Array, 'http://api.word...')
+#2 C:\xampp\htdocs\AsiaFan\wp-includes\plugin.php(189): WP_Hook->apply_filters(Array, Array)
+#3 C:\xampp\htdocs\AsiaFan\wp-includes\class-http.php(232): apply_filters('http_request_ar...', Array, 'http://api.word...')
+#4 C:\xampp\htdocs\AsiaFan\wp-includes\class-http.php(608): WP_Http->request('http://api.word...', Array)
+#5 C:\xampp\htdocs\AsiaFan\wp-includes\http.php(179): WP_Http->post('http://api.word...', Array)
+#6 C:\xampp\htdocs\AsiaFan\wp-includes\update.php(415): wp_remote_post('http://api.word...', Array)
+#7 C:\xampp\htdocs\AsiaFan\wp-includes\update.php(899): wp_update_plugins()
+#8 C:\xampp\htdocs\AsiaFan\wp-includes\class-wp-hook.php(303): _maybe_update_plugins('')
+#9 C:\xampp\htdocs\AsiaFan\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#10 C:\xampp\htdocs\AsiaFan\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#11 C:\xampp\htdocs\AsiaFan\wp-admin\admin.php(175): do_action('admin_init')
+#12 C:\xampp\htdocs\AsiaFan\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\AsiaFan\wp-content\plugins\ar-contactus\classes\ArContactUsUpdater.php on line 26
+
+2022-01-14T05:00:35+00:00 CRITICAL Uncaught TypeError: array_search(): Argument #2 ($haystack) must be of type array, null given in C:\xampp\htdocs\AsiaFan\wp-content\plugins\ar-contactus\classes\ArContactUsUpdater.php:26
+Stack trace:
+#0 C:\xampp\htdocs\AsiaFan\wp-content\plugins\ar-contactus\classes\ArContactUsUpdater.php(26): array_search('ar-contactus/ar...', NULL)
+#1 C:\xampp\htdocs\AsiaFan\wp-includes\class-wp-hook.php(303): ArContactUsUpdater->updatesExclude(Array, 'http://api.word...')
+#2 C:\xampp\htdocs\AsiaFan\wp-includes\plugin.php(189): WP_Hook->apply_filters(Array, Array)
+#3 C:\xampp\htdocs\AsiaFan\wp-includes\class-http.php(232): apply_filters('http_request_ar...', Array, 'http://api.word...')
+#4 C:\xampp\htdocs\AsiaFan\wp-includes\class-http.php(608): WP_Http->request('http://api.word...', Array)
+#5 C:\xampp\htdocs\AsiaFan\wp-includes\http.php(179): WP_Http->post('http://api.word...', Array)
+#6 C:\xampp\htdocs\AsiaFan\wp-includes\update.php(415): wp_remote_post('http://api.word...', Array)
+#7 C:\xampp\htdocs\AsiaFan\wp-includes\update.php(899): wp_update_plugins()
+#8 C:\xampp\htdocs\AsiaFan\wp-includes\class-wp-hook.php(303): _maybe_update_plugins('')
+#9 C:\xampp\htdocs\AsiaFan\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#10 C:\xampp\htdocs\AsiaFan\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#11 C:\xampp\htdocs\AsiaFan\wp-admin\admin.php(175): do_action('admin_init')
+#12 C:\xampp\htdocs\AsiaFan\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown in C:\xampp\htdocs\AsiaFan\wp-content\plugins\ar-contactus\classes\ArContactUsUpdater.php on line 26
+

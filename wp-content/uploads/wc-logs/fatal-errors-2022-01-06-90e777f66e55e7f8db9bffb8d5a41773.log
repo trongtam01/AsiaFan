@@ -1,0 +1,4 @@
+2022-01-06T18:13:13+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\AsiaFan\wp-content\plugins\woocommerce\includes\rest-api\Server.php on line 10
+
+2022-01-06T18:13:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\AsiaFan\wp-includes\wp-db.php on line 2056
+

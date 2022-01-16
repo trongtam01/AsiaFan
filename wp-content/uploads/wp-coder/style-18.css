@@ -1,0 +1,266 @@
+/* ========= INFORMATION ============================
+	- document:  WP Coder!
+	- author:    Dmytro Lobov 
+	- url:       https://wow-estore.com/
+==================================================== */
+a {
+    text-decoration: none
+}
+
+
+
+
+
+
+
+.btn.btn-theme {
+    color: #fff;
+    background: #315377;
+}
+
+.btn.btn-outline-theme {
+    color: #315377;
+    border-color: #315377;
+}
+
+.btn.btn-outline-theme:hover {
+    background: #BDCEE1;
+}
+
+
+
+
+.products-slider-container {
+    position: relative;
+    padding: 50px 0px;
+    background: #EAEDEF;
+}
+
+.products-slider {
+    height: 500px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+}
+
+.products-slider *[type=radio] {
+    display: none;
+}
+
+.products-slider label {
+    margin: auto;
+    width: 720px;
+    max-width: 720px;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0; right: 0;
+    /* cursor: pointer; */
+    background: #fff;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+}
+
+*[data-id=s1]:checked ~ *[data-id=slide4], 
+*[data-id=s2]:checked ~ *[data-id=slide5],
+*[data-id=s3]:checked ~ *[data-id=slide1], 
+*[data-id=s4]:checked ~ *[data-id=slide2],
+*[data-id=s5]:checked ~ *[data-id=slide3] {
+    box-shadow: 0 1px 4px 0 rgba(39, 88, 140, 0.2);
+    transform: translate3d(-30%,0,-200px);
+}
+
+*[data-id=s1]:checked ~ *[data-id=slide5], 
+*[data-id=s2]:checked ~ *[data-id=slide1],
+*[data-id=s3]:checked ~ *[data-id=slide2], 
+*[data-id=s4]:checked ~ *[data-id=slide3],
+*[data-id=s5]:checked ~ *[data-id=slide4] {
+    box-shadow: 0 6px 10px 0 rgba(39, 88, 140, 0.2), 0 2px 2px 0 rgba(39, 88, 140, 0.2);
+    transform: translate3d(-15%,0,-100px);
+}
+
+*[data-id=s1]:checked ~ *[data-id=slide1], 
+*[data-id=s2]:checked ~ *[data-id=slide2],
+*[data-id=s3]:checked ~ *[data-id=slide3], 
+*[data-id=s4]:checked ~ *[data-id=slide4],
+*[data-id=s5]:checked ~ *[data-id=slide5] {
+    box-shadow: 0 13px 25px 0 rgba(39, 88, 140, 0.2), 0 11px 7px 0 rgba(39, 88, 140, 0.2);
+    transform: translate3d(0,0,0);
+}
+
+*[data-id=s1]:checked ~ *[data-id=slide2], 
+*[data-id=s2]:checked ~ *[data-id=slide3],
+*[data-id=s3]:checked ~ *[data-id=slide4], 
+*[data-id=s4]:checked ~ *[data-id=slide5],
+*[data-id=s5]:checked ~ *[data-id=slide1] {
+    box-shadow: 0 6px 10px 0 rgba(39, 88, 140, 0.2), 0 2px 2px 0 rgba(39, 88, 140, 0.2);
+    transform: translate3d(15%,0,-100px);
+}
+
+*[data-id=s1]:checked ~ *[data-id=slide3], 
+*[data-id=s2]:checked ~ *[data-id=slide4],
+*[data-id=s3]:checked ~ *[data-id=slide5], 
+*[data-id=s4]:checked ~ *[data-id=slide1],
+*[data-id=s5]:checked ~ *[data-id=slide2] {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+}
+
+
+.product-topics,
+.product-topics li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-topics {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-topics li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.product-topics li.active {
+    background: #4677AB;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.product-topics-container li {
+    cursor: pointer;
+}
+
+.product-topics-container li span {
+    padding: 5px 0px;
+    display: inline-block;
+}
+
+.product-topics-container li:not(.active) span {
+    border-bottom: 2px solid #315377;
+}
+
+.products-slider-seemore {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.products-slider .product-slider-item {
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.products-slider .product-slider-item .background {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: calc(100% - 100px);
+    z-index: -1;
+    color: transparent;
+    opacity: 0.2;
+    /* font-size: 100px; */
+    -webkit-text-stroke: 1px #4677AB;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    line-height: 0.8;
+    white-space: nowrap;
+}
+
+.products-slider .product-slider-item .product-layout {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.products-slider .product-slider-item .right-col,
+.products-slider .product-slider-item .left-col {
+    display: inline-block;
+}
+
+.products-slider .product-slider-item .left-col {
+    padding: 50px;
+}
+
+.products-slider .product-slider-item .category a {
+    color: #4677AB;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.products-slider .product-slider-item .title {
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .retailer {
+        border-left: 1px solid #749CC6;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    .retailers .col:nth-child(3n - 2) .retailer {
+        border: none;
+    }
+
+    .asiavina-contact-form form {
+        margin: 50px 100px;
+    }
+
+    .btn:not(.dropdown-toggle) {
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.btn-outline-theme{
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.products-slider-container .products-slider-prev,
+.products-slider-container .products-slider-next
+{
+    display: inline-block;
+    position: absolute;
+    right: calc(100% + 20px);
+    top: 85px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 0px;
+    outline: none;
+    background: #BACEE3 url(https://quatvietnam.com.vn/wp-content/themes/asiavina/assets/images/arrow.png) no-repeat center center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.products-slider-container .products-slider-prev {
+    right: auto;
+    /* left: 20px; */
+    left: calc(50% - 570px);
+    top: 275px;
+}
+
+.products-slider-container .products-slider-next {
+    /* right: 20px; */
+    right: calc(50% - 570px);
+    left: auto;
+    top: 275px;
+}
+
+
+.products-slider-container .products-slider-next {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
